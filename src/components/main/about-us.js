@@ -16,6 +16,10 @@ const styles = {
   fadeInLeft: {
     animation: 'x 3.5s',
     animationName: Radium.keyframes(fadeInLeft, 'fadeInLeft')
+  },
+  fadeInRight: {
+    animation: 'x 3.5s',
+    animationName: Radium.keyframes(fadeInRight, 'fadeInRight')
   }
 }
 
@@ -34,11 +38,11 @@ class AboutUs extends Component {
       >
       <div>
        <h2>A B O U T &nbsp;<span> C Y B E L E</span></h2>
-       <p>jajaj inacin </p>
-       <div style={{textAlign:'center'}}>
-         <span>marko</span>
-         <span style={{width:'8px',height:'8px',background:'#f0d389',display:'inline-block'}}></span>
-         <span>janko</span>
+       <p style={{textAlign:'center'}}>some text about cybele</p>
+       <div style={{textAlign:'center',paddingTop:'15px',display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'50px'}}>
+         <span className={css.border}></span>
+         <span style={{width:'8px',height:'8px',background:'#f0d389',display:'inline-block',borderRadius:'50%',margin:'0 20px'}}></span>
+         <span className={css.border}></span>
        </div>
        </div>
         <Grid>
@@ -58,12 +62,19 @@ class AboutUs extends Component {
             </Grid.Column>
             <Grid.Column computer={6}>
             {/* <Transition animation={animation} duration={duration} visible={visible}> */}
-            <div>
-              <h3><span style={{height:'20px',background:'#f0d389',display:'inline-block',width:'2px'}}></span> Our mission</h3>
-              <p>Let’s grow together! We are constantly following the trends in the dynamic world of information technologies in order to provide our customers with the best service and that is exactly what distinguishes us from others.</p>
-              <h3><span style={{height:'20px',background:'#f0d389',display:'inline-block',width:'2px'}}>&nbsp;</span> Our vision</h3>
-              <p>Cybele is going to rise over Silicon Valley and conquer (not divide) like we are supposed to. 2020 Our vision is becoming reality.</p>
-              </div>
+            <TrackVisibility once throttleInterval={100}>
+              {
+                ({ isVisible }) => isVisible ?
+              <StyleRoot>
+                <div style={styles.fadeInRight}>
+                  <h3><span style={{height:'20px',background:'#f0d389',display:'inline-block',width:'2px'}}></span> Our mission</h3>
+                  <p>Let’s grow together! We are constantly following the trends in the dynamic world of information technologies in order to provide our customers with the best service and that is exactly what distinguishes us from others.</p>
+                  <h3><span style={{height:'20px',background:'#f0d389',display:'inline-block',width:'2px'}}>&nbsp;</span> Our vision</h3>
+                  <p>Cybele is going to rise over Silicon Valley and conquer (not divide) like we are supposed to. 2020 Our vision is becoming reality.</p>
+                </div>
+                </StyleRoot> : ''
+              }
+            </TrackVisibility>
               {/* </Transition> */}
             </Grid.Column>
           </Grid.Row>
