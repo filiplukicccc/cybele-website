@@ -63,8 +63,13 @@ h1 span, .aboutUs h2 span {
   width: 15%;
 }
 .icon {
-  font-family: Icons!important;
+  font-family: Icons !important;
   color: #f0d389;
+}
+.iconGrey{
+  font-family: Icons !important;
+  color: #161e25;
+  margin-bottom: 20px !important;
 }
 
 .iconDiv {
@@ -78,6 +83,26 @@ h1 span, .aboutUs h2 span {
   border-radius: 50%;
   font-size: 32px;
   transition: 0.5s;
+}
+.iconGreyDiv {
+  height: 100px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  transition: 0.5s;
+  text-align: center;
+}
+.iconGreyDiv p {
+  color:#161e25;
+}
+.iconGreyDiv:hover  {
+  .iconGrey {
+    // color: #f0d389;
+    animation: in 1.5s infinite;
+    transform: rotate(30deg);
+  }
 }
 .iconDiv:hover  {
   background: #f0d389;
