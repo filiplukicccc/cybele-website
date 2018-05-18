@@ -9,6 +9,7 @@ import Radium, {StyleRoot} from 'radium';
 import Video from './video'
 import Services from './services'
 import Clients from './clients'
+import People from './team'
 
 // const styles = {
 //   zoomInDown: {
@@ -37,6 +38,9 @@ class Home extends Component {
         </ScrollableAnchor>
         <ScrollableAnchor id={'clients'}>
           <Clients />
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'people'}>
+          <People />
         </ScrollableAnchor>
       </div>
     )

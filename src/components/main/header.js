@@ -21,6 +21,7 @@ class Header extends Component {
           <a href='#about-us'><Menu.Item name='ABOUT US' /></a>
           <a href='#services'><Menu.Item name='SERVICES' /></a>
           <a href='#clients'><Menu.Item name='CLIENTS' /></a>
+          <a href='#people'><Menu.Item name='PEOPLE' /></a>
         </Menu>
       </div>
     )
