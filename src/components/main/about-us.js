@@ -47,7 +47,7 @@ class AboutUs extends Component {
        </div>
         <Grid>
           <Grid.Row centered>
-            <Grid.Column computer={6}>
+            <Grid.Column computer={6} tablet={7} mobile={14}>
             <TrackVisibility once throttleInterval={100}>
             {
               ({ isVisible }) => isVisible ?
@@ -60,14 +60,14 @@ class AboutUs extends Component {
             }
             </TrackVisibility>
             </Grid.Column>
-            <Grid.Column computer={6}>
+            <Grid.Column computer={6} tablet={7} mobile={14}>
             {/* <Transition animation={animation} duration={duration} visible={visible}> */}
             <TrackVisibility once throttleInterval={100}>
               {
                 ({ isVisible }) => isVisible ?
               <StyleRoot>
                 <div style={styles.fadeInRight}>
-                  <h3><span style={{height:'20px',background:'#f0d389',display:'inline-block',width:'2px'}}></span> Our mission</h3>
+                  <h3 className={css.mission}><span style={{height:'20px',background:'#f0d389',display:'inline-block',width:'2px'}}></span> Our mission</h3>
                   <p>Let’s grow together! We are constantly following the trends in the dynamic world of information technologies in order to provide our customers with the best service and that is exactly what distinguishes us from others.</p>
                   <h3><span style={{height:'20px',background:'#f0d389',display:'inline-block',width:'2px'}}>&nbsp;</span> Our vision</h3>
                   <p>Cybele is going to rise over Silicon Valley and conquer (not divide) like we are supposed to. 2020 Our vision is becoming reality.</p>

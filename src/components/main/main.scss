@@ -14,29 +14,39 @@ html, body {
   top: 40%;
   right: 50%;
   transform: translate(50%,50%);
+  width: 90%;
+  text-align: center;
+}
+.videoHome {
+  height: 1100px;
 }
 .welcome {
   color: white;
   font-size: 44px;
   font-weight: 300;
+  letter-spacing: 10px;
 }
 .aboutUs {
   width: 100%;
   background: #161e25;
   color: #FFF;
-  padding: 60px 0px;
+  padding: 60px 0px 100px 0px;
 }
-.aboutUs h2 {
+.services {
+  color: #fff;
+  width: 100%;
+}
+.aboutUs h2, .services h2 {
   text-align: center;
   font-size: 33px;
   font-weight: 300;
   margin-bottom: 6px;
 }
-.aboutUs h3 {
+.aboutUs h3, .services h3 {
   font-weight: 300;
   font-size: 20px;
 }
-.aboutUs p {
+.aboutUs p, .services p {
   font-size: 16px;
 }
 h1 span, .aboutUs h2 span {
@@ -51,4 +61,45 @@ h1 span, .aboutUs h2 span {
   border-bottom: 1px solid #FFF;
   display: inline-block;
   width: 15%;
+}
+.icon {
+  font-family: Icons!important;
+  color: #f0d389;
+}
+
+.iconDiv {
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 32px;
+  transition: 0.5s;
+}
+.iconDiv:hover  {
+  background: #f0d389;
+  .icon {
+    color: #161e25;
+    animation: in 1.5s infinite;
+    transform: rotate(30deg);
+  }
+}
+@keyframes in {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mission {
+    margin-top: 30px!important;
+  }
+  .videoHome {
+    height: 700px;
+  }
 }
