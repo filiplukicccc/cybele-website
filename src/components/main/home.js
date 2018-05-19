@@ -9,6 +9,7 @@ import Radium, {StyleRoot} from 'radium';
 import Video from './video'
 import Services from './services'
 import Clients from './clients'
+import Count from './count'
 import People from './team'
 
 // const styles = {
@@ -38,6 +39,11 @@ class Home extends Component {
         </ScrollableAnchor>
         <ScrollableAnchor id={'clients'}>
           <Clients />
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'count'}>
+         
+            <Count />
+         
         </ScrollableAnchor>
         <ScrollableAnchor id={'people'}>
           <People />
