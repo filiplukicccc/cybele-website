@@ -16,6 +16,8 @@ import hilton from '../../images/hilton.png'
 import tritacke from '../../images/tritacke.png'
 import { Grid } from 'semantic-ui-react'
 import { Icon } from 'semantic-ui-react'
+import CountUp from 'react-countup'
+import TrackVisibility from 'react-on-screen';
 
 
 class Clients extends Component {

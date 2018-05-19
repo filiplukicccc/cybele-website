@@ -1,0 +1,22 @@
+.countUp {
+    font-size:3em;
+    color:#fff;
+  }
+.countUpRow{
+    height:300px;
+    align-items: center !important;
+    padding: 0px 100px !important;
+    background:rgba(0,0,0,0.85);
+}
+.bgImg {
+  background-size: contain;
+}
+.countDiv {
+  display:flex;
+  justify-content: space-between;
+}
+.countDiv p {
+    color:#f0d389;
+    font-size:13px;
+    letter-spacing: 1px;
+  }
