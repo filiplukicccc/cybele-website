@@ -14,7 +14,7 @@ class People extends Component {
       <div className={css.aboutUs}>
         <div>
         <h2>M E E T &nbsp; T H E &nbsp; T E A M</h2>
-        <p style={{textAlign:'center'}}>some text about cybele</p>
+        <p style={{textAlign:'center'}}>We're the best professionals in this field</p>
         <div style={{textAlign:'center',paddingTop:'15px',display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'50px'}}>
           <span className={css.border}></span>
           <span style={{width:'8px',height:'8px',background:'#f0d389',display:'inline-block',borderRadius:'50%',margin:'0 20px'}}></span>
@@ -24,20 +24,48 @@ class People extends Component {
         <Grid>
           <Grid.Row centered>
             <Grid.Column computer={3}>
-              <div className={css.teamImg} style={{backgroundImage: `url(${yourFile})`}}>
+              <div className={css.teamDiv}>
+                <div className={css.hoverDiv}></div>
+                <div className={css.teamImg} style={{backgroundImage: `url(${yourFile})`}}></div>
+                <div className={css.teamImgHover} style={{backgroundImage: `url(${yourFileHover})`}}>
+                  <div className={css.hoverDivSec}></div>
+                </div>
               </div>
+              <h3 className={css.name}>ELVIS MASOVIC</h3>
+              <p className={css.profession}>Software developer</p>
             </Grid.Column>
             <Grid.Column computer={3}>
-              <div className={css.teamImg} style={{backgroundImage: `url(${yourFile})`}}>
+            <div className={css.teamDiv}>
+                <div className={css.hoverDiv}></div>
+                <div className={css.teamImg} style={{backgroundImage: `url(${yourFile})`}}></div>
+                <div className={css.teamImgHover} style={{backgroundImage: `url(${yourFileHover})`}}>
+                  <div className={css.hoverDivSec}></div>
+                </div>
               </div>
+              <h3 className={css.name}>ELVIS MASOVIC</h3>
+              <p className={css.profession}>Software developer</p>
             </Grid.Column>
             <Grid.Column computer={3}>
-              <div className={css.teamImg} style={{backgroundImage: `url(${yourFile})`}}>
+            <div className={css.teamDiv}>
+                <div className={css.hoverDiv}></div>
+                <div className={css.teamImg} style={{backgroundImage: `url(${yourFile})`}}></div>
+                <div className={css.teamImgHover} style={{backgroundImage: `url(${yourFileHover})`}}>
+                  <div className={css.hoverDivSec}></div>
+                </div>
               </div>
+              <h3 className={css.name}>ELVIS MASOVIC</h3>
+              <p className={css.profession}>Software developer</p>
             </Grid.Column>
             <Grid.Column computer={3}>
-              <div className={css.teamImg} style={{backgroundImage: `url(${yourFile})`}}>
+            <div className={css.teamDiv}>
+                <div className={css.hoverDiv}></div>
+                <div className={css.teamImg} style={{backgroundImage: `url(${yourFile})`}}></div>
+                <div className={css.teamImgHover} style={{backgroundImage: `url(${yourFileHover})`}}>
+                  <div className={css.hoverDivSec}></div>
+                </div>
               </div>
+              <h3 className={css.name}>ELVIS MASOVIC</h3>
+              <p className={css.profession}>Software developer</p>
             </Grid.Column>
           </Grid.Row>
         </Grid>

@@ -113,11 +113,64 @@ h1 span, .aboutUs h2 span {
     transform: rotate(30deg);
   }
 }
-.teamImg {
-  background-size: cover;
+.teamDiv {
+  overflow: hidden;
   width: 273px;
   height: 410px;
+  position: relative;
   margin: 0 auto;
+}
+.teamImg {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.teamImgHover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: none;
+  animation: fadeIn 0.5s ease-in both;
+  border-radius: 8px;
+}
+.teamDiv:hover {
+  .teamImgHover {
+    display: block;
+  }
+  .hoverDiv {
+    background-color: rgba(0,0,0,0.8);
+  }
+}
+.hoverDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  transition-duration: 0.8s;
+}
+.hoverDivSec {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(240,211,137,0.4);
+  border-radius: 8px;
+}
+.name {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+.profession {
+  text-align: center;
+  color: #f0d389;
+  font-size: 15px;
 }
 // .slika2 {
 //   display: none;
