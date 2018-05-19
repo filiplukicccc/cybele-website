@@ -17,16 +17,12 @@
 .imgZoom {
     position: relative;
     background-color:#161e25;
-    /* border: 1px solid #333; */
-    /* margin: 1%; */
     overflow: hidden;
-    /* width:300px;
-    height:150px; */
     display:flex;
     justify-content:center;
     align-content: center;
   }
-img {
+.logos {
     max-width: 100%;
     height:200px;
     padding: 60px;
@@ -34,10 +30,10 @@ img {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
-  .imgZoom:hover img {
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+  .imgZoom:hover .logos {
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
   }
   .imgAerodrom {
     max-width: 100%;
@@ -50,7 +46,7 @@ img {
   .imgZepter {
     max-width: 100%;
     height:200px;
-    padding:70px 65px;
+    padding:50px 20px;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -58,7 +54,7 @@ img {
   .imgEli {
     max-width: 100%;
     height:200px;
-    padding: 45px;
+    padding: 40px 20px;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -67,6 +63,22 @@ img {
     max-width: 100%;
     height:200px;
     padding:70px 45px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .imgHilton {
+    max-width: 100%;
+    height:200px;
+    padding:60px 30px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .imgKodDace {
+    max-width: 100%;
+    height:200px;
+    padding:40px 40px;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;

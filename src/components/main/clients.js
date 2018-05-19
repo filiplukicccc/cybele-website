@@ -9,8 +9,8 @@ import eli from '../../images/miss-eli.png'
 import galenika from '../../images/galenika.png'
 import gecko from '../../images/gecko.png'
 // import jelka from '../../images/jelka.png'
-// import koddane from '../../images/koddane.png'
-// import optiplaza from '../../images/optiplaza.png'
+import koddace from '../../images/koddace.png'
+import optiplaza from '../../images/optiplaza.png'
 import osce from '../../images/osce.png'
 import hilton from '../../images/hilton.png'
 import tritacke from '../../images/tritacke.png'
@@ -72,52 +72,59 @@ class Clients extends Component {
             </Grid>
           </Grid.Row>
           <Grid.Row centered style={{ padding: "0px", backgroundColor: "#161e25", justifyContent: "centered" }}>
-            <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
+            <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
               <div className={style.imgZoom}>
-                <img className={style.imgZepter} src={zepter} />
+                <img className={style.imgZepter + " " + style.logos} src={zepter} />
+              </div>
+            </Grid.Column>
+            <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
+              <div className={style.imgZoom}>
+                <img className={style.imgAerodrom + " " + style.logos} src={aerodrom} />
+              </div>
+            </Grid.Column>
+            <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
+              <div className={style.imgZoom }>
+                <img className={style.logos} src={galenika} />
+              </div>
+            </Grid.Column>
+            <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
+              <div className={style.imgZoom}>
+                <img  className={style.logos + " " + style.imgHilton} src={hilton} />
+              </div>
+            </Grid.Column>
+            <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
+              <div className={style.imgZoom}>
+                <img className={style.imgEli + " " + style.logos} src={eli} />
               </div>
             </Grid.Column>
             <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
               <div className={style.imgZoom}>
-                <img className={style.imgAerodrom} src={aerodrom} />
+                <img className={style.imgOsce + " " + style.logos} src={osce} />
               </div>
             </Grid.Column>
             <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
               <div className={style.imgZoom}>
-                <img src={galenika} />
+                <img  className={style.logos} src={gecko} />
               </div>
             </Grid.Column>
             <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
               <div className={style.imgZoom}>
-                <img src={avanglion} />
+                <img  className={style.logos} src={avanglion} />
               </div>
             </Grid.Column>
-
-            <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
+           <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
               <div className={style.imgZoom}>
-                <img className={style.imgEli} src={eli} />
+                <img  className={style.logos} src={tritacke} />
               </div>
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row centered style={{ padding: "0px", backgroundColor: "#161e25", justifyContent: "centered" }}>
+            </Grid.Column >
             <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
               <div className={style.imgZoom}>
-                <img className={style.imgOsce} src={osce} />
+                <img  className={style.logos} src={optiplaza} />
               </div>
-            </Grid.Column>
+            </Grid.Column >
             <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
               <div className={style.imgZoom}>
-                <img src={gecko} />
-              </div>
-            </Grid.Column>
-            <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
-              <div className={style.imgZoom}>
-                <img src={hilton} />
-              </div>
-            </Grid.Column>
-            <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
-              <div className={style.imgZoom}>
-                <img src={tritacke} />
+                <img  className={style.logos + " " + style.imgKodDace} src={koddace} />
               </div>
             </Grid.Column >
           </Grid.Row>
