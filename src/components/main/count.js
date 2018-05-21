@@ -22,37 +22,37 @@ class Count extends Component {
               ({ isVisible }) => isVisible ?
               <Grid  className={style.countDiv}>
               {/* <div className={style.countDiv}> */}
-              <Grid.Column computer={2} mobile={5}>
+              <Grid.Column computer={2} mobile={8} tablet={4}>
           <div style={{textAlign:"center"}}>
            <CountUp className={style.countUp} start={0} end={160} duration={4.75} useEasing={true}/>
           <p>HAPPY CLIENTS</p>
           </div>
           </Grid.Column >
-          <Grid.Column computer={3} mobile={5}>
+          <Grid.Column computer={3} mobile={8} tablet={5}>
           <div style={{textAlign:"center"}}>
           <CountUp className={style.countUp} start={0} end={160} duration={4.75} useEasing={true}/>
           <p>CUPS OF COFFEE (per day)</p>
           </div>
           </Grid.Column>
-          <Grid.Column computer={2} mobile={5}>
+          <Grid.Column computer={2} mobile={8} tablet={4}>
           <div style={{textAlign:"center"}}>
           <CountUp className={style.countUp} start={0} end={360} duration={4.75} useEasing={true}/>
           <p>POSITIVE FEEDBACK</p>
           </div>
           </Grid.Column>
-          <Grid.Column computer={2} mobile={5}>
+          <Grid.Column computer={2} mobile={8} tablet={4}>
           <div style={{textAlign:"center"}}>
           <CountUp className={style.countUp} start={0} end={60} duration={4.75} useEasing={true}/>
           <p>FINISHED PROJECTS</p>
           </div>
           </Grid.Column>
-          <Grid.Column computer={2} mobile={5}>
+          <Grid.Column computer={2} mobile={8} tablet={4}>
           <div style={{textAlign:"center"}}>
           <CountUp className={style.countUp} start={0} end={92} duration={4.75} useEasing={true}/>
           <p>OWN PROJECTS</p>
           </div>
           </Grid.Column>
-          <Grid.Column computer={2} mobile={5}>
+          <Grid.Column computer={2} mobile={8} tablet={4}>
           <div style={{textAlign:"center"}}>
           <CountUp className={style.countUp} start={0} end={12} duration={4.75} useEasing={true}/>
           <p>WINNING AWARDS</p>
