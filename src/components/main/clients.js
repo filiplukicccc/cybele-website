@@ -35,7 +35,7 @@ class Clients extends Component {
         </div>
         <Grid className={style.clientsDiv}>
           <Grid.Row centered>
-            <Grid.Column computer={2}  tablet={3} mobile={14}>
+            <Grid.Column computer={2}  tablet={3} mobile={7}>
               <div className={css.iconGreyDiv}>
                 <Icon name='coffee' size='large' className={css.iconGrey} />
                 <p>DISCUSS</p>
