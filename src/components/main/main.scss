@@ -72,6 +72,11 @@ h1 span, .aboutUs h2 span {
   color: #161e25;
   margin-bottom: 20px !important;
 }
+.iconWhite{
+  font-family: Icons !important;
+  color: #fff;
+  margin-bottom: 20px !important;
+}
 
 .iconDiv {
   width: 100px;
@@ -225,7 +230,7 @@ h1 span, .aboutUs h2 span {
 		transform: translate3d(0, 0, 0);
 	}
 }
-@media  screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .mission {
     margin-top: 30px!important;
   }

@@ -10,6 +10,7 @@ import Video from './video'
 import Services from './services'
 import Clients from './clients'
 import Count from './count'
+import Contact from './contact'
 import People from './team'
 
 // const styles = {
@@ -41,12 +42,13 @@ class Home extends Component {
           <Clients />
         </ScrollableAnchor>
         <ScrollableAnchor id={'count'}>
-         
             <Count />
-         
         </ScrollableAnchor>
         <ScrollableAnchor id={'people'}>
           <People />
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'people'}>
+          <Contact />
         </ScrollableAnchor>
       </div>
     )
