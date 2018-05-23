@@ -10,6 +10,7 @@ import Video from './video'
 import Services from './services'
 import Clients from './clients'
 import Count from './count'
+import Contact from './contact'
 import People from './team'
 import { Loader } from 'semantic-ui-react';
 
