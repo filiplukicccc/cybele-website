@@ -59,8 +59,8 @@ class Clients extends Component {
             }
       </TrackVisibility>
       <Parallax bgImage={idea} strength={-100}>
-        <Grid  className={style.clientsDiv}>
-          <Grid.Row centered>
+        <Grid style={{margin:'0px'}} className={style.clientsDiv}>
+          <Grid.Row  centered>
             <Grid.Column computer={2}  tablet={3} mobile={14}>
               <TrackVisibility once throttleInterval={300}>
                 {
@@ -131,7 +131,7 @@ class Clients extends Component {
                 ({ isVisible }) => isVisible ?
                   <StyleRoot>
                     <div style={styles.fadeIn}>
-                      <Grid>
+                      <Grid style={{ margin:'0px'}}>
                         <Grid.Row centered>
                           <Grid.Column computer={10}>
                             <div style={{ textAlign: "center", color: "#161e25",borderTop:"1px solid #161e25",borderBottom:"1px solid #161e25",marginBottom:"85px",marginTop:"30px" }}><p style={{marginTop:"30px",marginBottom:"30px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
@@ -145,7 +145,7 @@ class Clients extends Component {
           </Grid.Row>
           </Grid>
           </Parallax>
-          <Grid>
+          <Grid style={{margin:'0px'}}>
           <Grid.Row centered style={{ padding: "0px", backgroundColor: "#161e25", justifyContent: "centered" }}>
             <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
               <div className={style.imgZoom}>

@@ -70,6 +70,9 @@ class Home extends Component {
           <ScrollableAnchor id={'people'}>
             <People />
           </ScrollableAnchor>
+          <ScrollableAnchor id={'contact'}>
+            <Contact />
+          </ScrollableAnchor>
           </div>
         }
       </div>

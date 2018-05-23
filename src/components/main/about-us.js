@@ -56,8 +56,8 @@ class AboutUs extends Component {
        </StyleRoot> : ''
             }
             </TrackVisibility>
-        <Grid>
-          <Grid.Row centered>
+        <Grid style={{margin:'0px'}}>
+          <Grid.Row centered style={{margin:'0px'}}>
             <Grid.Column computer={6} tablet={7} mobile={14}>
             <TrackVisibility once throttleInterval={100}>
             {

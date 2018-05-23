@@ -164,7 +164,7 @@ class People extends Component {
                         <div className={css.hoverDivSec}></div></div>
                       </div>
                       <h3 className={css.name}>STEFAN PAREZANOVIC</h3>
-                      <p className={css.profession}>Software Developer</p>
+                      <p className={css.profession}>Backend Developer</p>
                     </div>
                     <div className={css.pic}>
                       <div className={css.inPic}>
@@ -186,7 +186,7 @@ class People extends Component {
                         <div className={css.hoverDivSec}></div></div>
                       </div>
                       <h3 className={css.name}>DRAGAN NIKOLIC</h3>
-                      <p className={css.profession}>Software Developer</p>
+                      <p className={css.profession}>Frontend Developer</p>
                     </div>
                     <div className={css.pic}>
                       <div className={css.inPic}>
@@ -197,7 +197,7 @@ class People extends Component {
                         <div className={css.hoverDivSec}></div></div>
                       </div>
                       <h3 className={css.name}>MARKO VENIGER</h3>
-                      <p className={css.profession}>Game Designer</p>
+                      <p className={css.profession}>Gameplay Progammer</p>
                     </div>
                     <div className={css.pic}>
                       <div className={css.inPic}>

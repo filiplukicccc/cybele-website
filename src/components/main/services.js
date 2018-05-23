@@ -54,7 +54,7 @@ class Services extends Component {
               </StyleRoot> : ''
             }
             </TrackVisibility>
-            <Grid>
+            <Grid style={{margin:'0px'}}>
               <Grid.Row centered>
                 <Grid.Column computer={4} tablet={6} mobile={14} style={{textAlign:'center',margin:'0 1px 50px 0'}}>
                 <TrackVisibility once throttleInterval={100}>
