@@ -3,7 +3,7 @@ import css from './main.scss'
 import {
   Grid
 } from 'semantic-ui-react'
-import { fadeInLeft, fadeInRight } from 'react-animations';
+import { fadeInLeft, fadeInRight, zoomIn } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
 // import { Button, Image, Transition } from 'semantic-ui-react'
 import TrackVisibility from 'react-on-screen';
@@ -20,6 +20,10 @@ const styles = {
   fadeInRight: {
     animation: 'x 3.5s',
     animationName: Radium.keyframes(fadeInRight, 'fadeInRight')
+  },
+  zoomIn: {
+    animation: 'x 2.5s',
+    animationName: Radium.keyframes(zoomIn, 'zoomIn')
   }
 }
 
@@ -36,15 +40,22 @@ class AboutUs extends Component {
     return(
       <div className={css.aboutUs} // onMouseEnter={this.toggleVisibility}
       >
-      <div>
-       <h2>A B O U T &nbsp;<span> C Y B E L E</span></h2>
-       <p style={{textAlign:'center'}}>some text about cybele</p>
-       <div style={{textAlign:'center',paddingTop:'15px',display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'50px'}}>
-         <span className={css.border}></span>
-         <span style={{width:'8px',height:'8px',background:'#f0d389',display:'inline-block',borderRadius:'50%',margin:'0 20px'}}></span>
-         <span className={css.border}></span>
-       </div>
-       </div>
+      <TrackVisibility once throttleInterval={100}>
+            {
+              ({ isVisible }) => isVisible ?
+      <StyleRoot>
+        <div style={styles.zoomIn}>
+        <h2>A B O U T &nbsp;<span> C Y B E L E</span></h2>
+        <p style={{textAlign:'center'}}>some text about cybele</p>
+          <div style={{textAlign:'center',paddingTop:'15px',display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'50px'}}>
+            <span className={css.border}></span>
+            <span style={{width:'8px',height:'8px',background:'#f0d389',display:'inline-block',borderRadius:'50%',margin:'0 20px'}}></span>
+            <span className={css.border}></span>
+          </div>
+        </div>
+       </StyleRoot> : ''
+            }
+            </TrackVisibility>
         <Grid>
           <Grid.Row centered>
             <Grid.Column computer={6} tablet={7} mobile={14}>

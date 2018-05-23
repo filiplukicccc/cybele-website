@@ -12,7 +12,7 @@ html, body {
 }
 .homeDiv {
   position: absolute;
-  top: 40%;
+  top: 34%;
   right: 50%;
   transform: translate(50%,50%);
   width: 90%;
@@ -130,11 +130,10 @@ h1 span, .aboutUs h2 span {
   top: 0px;
   left: 0px;
   background-size: cover;
-  width: 100%;
-  height: 100%;
+  width: 275px;
+  height: 413px;
   display: none;
   animation: fadeIn 0.5s ease-in both;
-  border-radius: 8px;
 }
 .teamDiv:hover {
   .teamImgHover {
@@ -159,18 +158,20 @@ h1 span, .aboutUs h2 span {
   top: 0px;
   left: 0px;
   background-color: rgba(240,211,137,0.4);
-  border-radius: 8px;
 }
 .name {
   text-align: center;
-  margin-top: 20px;
   margin-bottom: 6px;
   letter-spacing: 1px;
+  clear: both;
+  padding-top: 20px;
+  margin-left: 30px;
 }
 .profession {
   text-align: center;
   color: #f0d389;
   font-size: 15px;
+  margin-left: 30px;
 }
 // .slika2 {
 //   display: none;
@@ -207,6 +208,83 @@ h1 span, .aboutUs h2 span {
 //   left: 0px;
 //   transition-duration: 0.34s;
 // }
+
+.container {
+  width: 1220px;
+  margin: 90px auto 45px auto;
+  overflow: auto;
+}
+.inCon {
+  width: 100%;
+  visibility: visible;
+  display: block;
+  z-index: 1;
+  position: relative;
+  float: left;
+}
+.wrap {
+  position: relative;
+  overflow: hidden;
+  visibility: visible;
+}
+.inWrap {
+  transform: translate3d(0px,0px,0px);
+  transition: 0s;
+  width: 2835px;
+  position: relative;
+  transition: 0.8s;
+}
+.pic {
+  // width: 315px;
+  min-height: 1px;
+  float: left;
+  position: relative;
+}
+.inPic {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  float: left;
+  min-height: 1px;
+  margin-left: 30px;
+}
+// .mem {
+//   transform: translateY(0);
+// }
+.mem {
+  transform: translateY(0);
+  background-size: cover;
+  width: 275px;
+  height: 413px;
+}
+.inPic:hover {
+  .hoverDiv {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .teamImgHover {
+    display: block;
+  }
+}
+// .pic:hover {
+//   .teamImgHover {
+//     display: block;
+//   }
+// }
+.prva {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.buttons, .buttons1, .buttons2, .buttons3 {
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+}
+.buttons1, .buttons2, .buttons3 {
+  display: none;
+}
 @keyframes in {
   0% {
     transform: rotate(0);
@@ -225,11 +303,48 @@ h1 span, .aboutUs h2 span {
 		transform: translate3d(0, 0, 0);
 	}
 }
+@media only screen and (max-width: 1300px) {
+  // .inWrap {
+  //   width: 3130px;
+  // }
+  .container {
+    width: 915px;
+  }
+  .buttons, .buttons2, .buttons3 {
+    display: none;
+  }
+  .buttons1 {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  // .inWrap {
+  //   width: 3130px;
+  // }
+  .container {
+    width: 610px;
+  }
+  .buttons, .buttons1, .buttons3 {
+    display: none;
+  }
+  .buttons2 {
+    display: flex;
+  }
+}
 @media only screen and (max-width: 768px) {
   .mission {
     margin-top: 30px!important;
   }
   .videoHome {
     height: 700px;
+  }
+  .container {
+    width: 305px;
+  }
+  .buttons, .buttons1, .buttons2 {
+    display: none;
+  }
+  .buttons3 {
+    display: flex;
   }
 }
