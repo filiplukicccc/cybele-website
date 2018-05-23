@@ -57,6 +57,9 @@ import KoaRouter from 'koa-router';
 // High-precision timing, so we can debug response time to serve a request
 import ms from 'microseconds';
 
+//NODEMAILER
+import nodemailer from 'nodemailer';
+
 // React Router HOC for figuring out the exact React hierarchy to display
 // based on the URL
 import { StaticRouter } from 'react-router';
@@ -100,7 +103,6 @@ import config from 'kit/config';
 import PATHS from 'config/paths';
 
 // ----------------------
-
 // Create a network layer based on settings.  This is an immediate function
 // that binds either the `localInterface` function (if there's a built-in
 // GraphQL) or `externalInterface` (if we're pointing outside of ReactQL)
@@ -237,6 +239,49 @@ const router = (new KoaRouter())
   .get('/ping', async ctx => {
     ctx.body = 'pong';
   })
+//   var mailer = require('node-mailer');
+//    new mailer.Mail({
+// 	 from: 'noreply@domain.com',
+// 	 to: 'rodolphe@domain.com',
+// 	 subject: 'My Subject',
+// 	 body: 'My body',
+// 	 callback: function(err, data){
+// 		console.log(err);
+// 		console.log(data);
+// 	}
+// })
+  .post('/sendMail', async ctx => {
+    let a;
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'kicaubuntu@gmail.com',
+        pass: 'draganubuntu1987'
+      }
+    })
+    
+    const mailOptions = {
+      from:ctx.request.body.email,
+      to: "kicaubuntu@gmail.com",
+      subject: `Subject: ${ctx.request.body.subject}`,
+      text:`
+        ${ctx.request.body.text}
+        //////////////////////////////////////
+        Sent from: ${ctx.request.body.email}
+        Name : ${ctx.request.body.name}
+        Phone: ${ctx.request.body.phone}
+      `
+    }
+    
+    const poslo = await transporter.sendMail(mailOptions)
+    if(poslo.accepted) {
+      a = JSON.stringify({success: true});
+    }else{
+      a = JSON.stringify({success: false});
+    }
+    ctx.body = a;
+  })
+
 
   // Favicon.ico.  By default, we'll serve this as a 204 No Content.
   // If /favicon.ico is available as a static file, it'll try that first
