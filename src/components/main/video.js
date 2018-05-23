@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import css from './main.scss'
-import { zoomInDown } from 'react-animations';
+import { zoomInDown, fadeIn } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
+import logo from "../../video/logo.png";
 
 const styles = {
   zoomInDown: {
     animation: 'x 3s',
     animationName: Radium.keyframes(zoomInDown, 'zoomInDown')
-  }
+  },
+  fadeIn: {
+    animation: 'x 7.5s',
+    animationName: Radium.keyframes(fadeIn, 'fadeIn')
+  },
 }
 
 class Video extends Component {
@@ -18,6 +23,7 @@ class Video extends Component {
         </video>
            <div className={css.homeDiv}>
              <StyleRoot>
+              <img src={logo} width='140px' style={styles.fadeIn} />
                <h1 className={css.welcome} style={styles.zoomInDown}>WELCOME TO <span>CYBELE</span></h1>
              </StyleRoot>
              <p><i>Creativity is intelligence having fun</i></p>

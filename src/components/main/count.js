@@ -12,11 +12,11 @@ class Count extends Component {
   render() {
     return (
       <div style={{width:"100%"}}>
-       {/* <div style={{background:'rgba(0,0,0,0.85)',width:"100%",height:"100%"}}> */}
-       <Parallax bgImage={countImg} strength={-100} className={style.bgImg}>
-         <Grid centered>
-          <Grid.Row  className={style.countUpRow}>
-          <Grid.Column>
+       <div style={{background:'rgba(0,0,0,0.85)',width:"100%",height:"100%"}}>
+       <Parallax bgImage={countImg} strength={-500} className={style.bgImg}>
+         <Grid style={{margin:'0px'}}>
+          <Grid.Row className={style.countUpRow}>
+          <Grid.Column >
           <TrackVisibility once throttleInterval={100}>
           {
               ({ isVisible }) => isVisible ?
@@ -66,7 +66,7 @@ class Count extends Component {
           </Grid.Row>
         </Grid>
         </Parallax>
-        {/* </div> */}
+        </div>
       </div>
     )
   }

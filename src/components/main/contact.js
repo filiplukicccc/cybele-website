@@ -83,7 +83,7 @@ class Contact extends Component {
             <span className={css.border}></span>
           </div>
         </div>
-        <Grid>
+        <Grid style={{margin:'0px'}}>
         <Grid.Row>
         <Grid.Column computer={6} tablet={6} mobile={15} className={style.contactColumn} >
               <div className={style.contact}>
