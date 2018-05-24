@@ -18,7 +18,7 @@ import { Grid } from 'semantic-ui-react'
 import { Icon } from 'semantic-ui-react'
 import CountUp from 'react-countup'
 import TrackVisibility from 'react-on-screen';
-import { flipInY, fadeIn } from 'react-animations';
+import { flipInY, fadeIn, zoomIn } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
 import idea from '../../video/boobs.jpg'
 import { Parallax } from 'react-parallax'
@@ -35,6 +35,10 @@ const styles = {
   fadeIn1: {
     animation: 'x 2.5s',
     animationName: Radium.keyframes(fadeIn, 'fadeIn')
+  },
+  zoomIn: {
+    animation: 'x 2.5s',
+    animationName: Radium.keyframes(zoomIn, 'zoomIn')
   }
 }
 
@@ -147,65 +151,76 @@ class Clients extends Component {
           </Grid.Row>
           </Grid>
           </Parallax>
-          <Grid style={{margin:'0px'}}>
-          <Grid.Row centered style={{ padding: "0px", backgroundColor: "#161e25", justifyContent: "centered" }}>
-            <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
-              <div className={style.imgZoom}>
-                <img className={style.imgZepter + " " + style.logos} src={zepter} />
-              </div>
-            </Grid.Column>
-            <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
-              <div className={style.imgZoom}>
-                <img className={style.imgAerodrom + " " + style.logos} src={aerodrom} />
-              </div>
-            </Grid.Column>
-            <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
-              <div className={style.imgZoom }>
-                <img className={style.logos} src={galenika} />
-              </div>
-            </Grid.Column>
-            <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
-              <div className={style.imgZoom}>
-                <img  className={style.logos + " " + style.imgHilton} src={hilton} />
-              </div>
-            </Grid.Column>
-            <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
-              <div className={style.imgZoom}>
-                <img className={style.imgEli + " " + style.logos} src={eli} />
-              </div>
-            </Grid.Column>
-            <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
-              <div className={style.imgZoom}>
-                <img className={style.imgOsce + " " + style.logos} src={osce} />
-              </div>
-            </Grid.Column>
-            <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
-              <div className={style.imgZoom}>
-                <img  className={style.logos} src={gecko} />
-              </div>
-            </Grid.Column>
-            <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
-              <div className={style.imgZoom}>
-                <img  className={style.logos} src={avanglion} />
-              </div>
-            </Grid.Column>
-           <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
-              <div className={style.imgZoom}>
-                <img  className={style.logos} src={tritacke} />
-              </div>
-            </Grid.Column >
-            <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
-              <div className={style.imgZoom}>
-                <img  className={style.logos} src={optiplaza} />
-              </div>
-            </Grid.Column >
-            <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
-              <div className={style.imgZoom}>
-                <img  className={style.logos + " " + style.imgKodDace} src={koddace} />
-              </div>
-            </Grid.Column >
-          </Grid.Row>
-        </Grid>
+          <div style={{minHeight:'400px'}}>
+          <TrackVisibility once throttleInterval={1000}>
+              {
+                ({ isVisible }) => isVisible ?
+                  <StyleRoot>
+                    <div style={styles.zoomIn} >
+                      <Grid style={{margin:'0px'}}>
+                        <Grid.Row centered style={{ padding: "0px", backgroundColor: "#161e25", justifyContent: "centered" }}>
+                        <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
+                          <div className={style.imgZoom}>
+                            <img className={style.imgZepter + " " + style.logos} src={zepter} />
+                          </div>
+                        </Grid.Column>
+                        <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
+                          <div className={style.imgZoom}>
+                            <img className={style.imgAerodrom + " " + style.logos} src={aerodrom} />
+                          </div>
+                        </Grid.Column>
+                        <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
+                          <div className={style.imgZoom }>
+                            <img className={style.logos} src={galenika} />
+                          </div>
+                        </Grid.Column>
+                        <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
+                          <div className={style.imgZoom}>
+                            <img  className={style.logos + " " + style.imgHilton} src={hilton} />
+                          </div>
+                        </Grid.Column>
+                        <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
+                          <div className={style.imgZoom}>
+                            <img className={style.imgEli + " " + style.logos} src={eli} />
+                          </div>
+                        </Grid.Column>
+                        <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
+                          <div className={style.imgZoom}>
+                            <img className={style.imgOsce + " " + style.logos} src={osce} />
+                          </div>
+                        </Grid.Column>
+                        <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
+                          <div className={style.imgZoom}>
+                            <img  className={style.logos} src={gecko} />
+                          </div>
+                        </Grid.Column>
+                        <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
+                          <div className={style.imgZoom}>
+                            <img  className={style.logos} src={avanglion} />
+                          </div>
+                        </Grid.Column>
+                      <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
+                          <div className={style.imgZoom}>
+                            <img  className={style.logos} src={tritacke} />
+                          </div>
+                        </Grid.Column >
+                        <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
+                          <div className={style.imgZoom}>
+                            <img  className={style.logos} src={optiplaza} />
+                          </div>
+                        </Grid.Column >
+                        <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
+                          <div className={style.imgZoom}>
+                            <img  className={style.logos + " " + style.imgKodDace} src={koddace} />
+                          </div>
+                        </Grid.Column >
+                      </Grid.Row>
+                    </Grid>
+                  </div>
+                </StyleRoot> : ''
+            }
+          </TrackVisibility>
+        </div>
       </div>
     )
   }

@@ -3,6 +3,8 @@ import css from './main.scss'
 import { zoomInDown, fadeIn } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
 import logo from "../../video/logo.png";
+import movie from "../../video/film.mp4";
+
 
 const styles = {
   zoomInDown: {
@@ -19,7 +21,7 @@ class Video extends Component {
   render(){
     return(
       <div>
-        <video className={css.videoHome} style={{marginBottom:'-6px'}} autoPlay loop src="https://coverr.co/s3/mp4/Love-Coding.mp4">
+        <video className={css.videoHome} style={{marginBottom:'-6px'}} autoPlay loop src={movie}>
         </video>
            <div className={css.homeDiv}>
              <StyleRoot>

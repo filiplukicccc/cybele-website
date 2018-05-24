@@ -29,3 +29,12 @@
   }
 
   }
+
+  @media only screen and (max-width: 768px) {
+    .countUp {
+      font-size: 2em;
+    }
+    .countDiv p {
+      font-size: 11px;
+    }
+  }

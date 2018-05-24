@@ -88,6 +88,17 @@ export default new WebpackConfig().merge({
         exclude: /node_modules/,
         loader: 'graphql-tag/loader',
       },
+      {
+        test: /\.(mov|mp4)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }  
+          }
+        ]
+      }
     ],
   },
 

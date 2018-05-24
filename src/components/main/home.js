@@ -19,7 +19,7 @@ configureAnchors({offset: 0, scrollDuration: 800})
 
 const styles = {
   fadeIn: {
-    animation: 'x 3.5s',
+    animation: 'x 2.5s',
     animationName: Radium.keyframes(fadeIn, 'fadeIn')
   }
 }
@@ -37,7 +37,7 @@ class Home extends Component {
       this.setState({
         loading: false
       });
-    }, 4000);
+    }, 3000);
   }
 
   render(){
