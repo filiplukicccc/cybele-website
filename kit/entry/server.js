@@ -255,8 +255,8 @@ const router = (new KoaRouter())
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'kicaubuntu@gmail.com',
-        pass: 'draganubuntu1987'
+        user: "a",
+        pass: "a"
       }
     })
     
