@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700');
 
+@import '~loaders.css/src/animations/ball-rotate.scss';
 
 body * {
   font-family: 'Dosis', sans-serif!important;
@@ -9,6 +10,12 @@ html, body {
   height: 100%;
   margin: 0px;
   padding: 0px;
+}
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
 }
 .homeDiv {
   position: absolute;
@@ -74,7 +81,7 @@ h1 span, .aboutUs h2 span {
 }
 .iconWhite{
   font-family: Icons !important;
-  color: #fff;
+  color: #f0d389;
   margin-bottom: 20px !important;
 }
 
@@ -218,6 +225,7 @@ h1 span, .aboutUs h2 span {
   width: 1220px;
   margin: 90px auto 45px auto;
   overflow: auto;
+  min-height: 486px;
 }
 .inCon {
   width: 100%;

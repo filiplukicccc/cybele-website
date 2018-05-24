@@ -43,7 +43,7 @@ class Services extends Component {
               ({ isVisible }) => isVisible ?
               <StyleRoot>
                 <div style={styles.tada}>
-                  <h2>O U R &nbsp;&nbsp; S E R V I C E S</h2>
+                  <h2>O U R &nbsp;&nbsp; <span style={{color:'#f0d389'}}>S E R V I C E S</span></h2>
                   <p style={{textAlign:'center'}}>some text about cybele</p>
                   <div style={{textAlign:'center',paddingTop:'15px',display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'50px'}}>
                     <span className={css.border}></span>

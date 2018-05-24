@@ -30,7 +30,8 @@ class People extends Component {
   constructor(props){
     super(props);
     this.state = {
-      trans: 0
+      trans: 0,
+      col: '#f0d389'
     }
   }
   plus = () => {
@@ -92,7 +93,7 @@ class People extends Component {
               ({ isVisible }) => isVisible ?
               <StyleRoot>
                 <div style={styles.flipInX}>
-                <h2>M E E T &nbsp; T H E &nbsp; T E A M</h2>
+                <h2>M E E T &nbsp; <span>T H E &nbsp; T E A M</span></h2>
                 <p style={{textAlign:'center'}}>We're the best professionals in this field</p>
                 <div style={{textAlign:'center',paddingTop:'15px',display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'50px'}}>
                   <span className={css.border}></span>
@@ -219,7 +220,7 @@ class People extends Component {
         </TrackVisibility>
             <div className={css.buttons}>
               <span style={{width:'20px',height:'8px',backgroundColor:'#f0d389',borderRadius:'3px',marginRight:'10px',cursor:'pointer'}} onClick={this.minus}></span>
-              <span style={{width:'20px',height:'8px',backgroundColor:'#f0d389',borderRadius:'3px',marginLeft:'10px',cursor:'pointer'}} onClick={this.plus}></span>
+              <span style={{width:'20px',height:'8px',backgroundColor:`${this.state.col}`,borderRadius:'3px',marginLeft:'10px',cursor:'pointer'}} onClick={this.plus}></span>
             </div>
             <div className={css.buttons1}>
               <span style={{width:'20px',height:'8px',backgroundColor:'#f0d389',borderRadius:'3px',marginRight:'10px',cursor:'pointer'}} onClick={this.minus}></span>

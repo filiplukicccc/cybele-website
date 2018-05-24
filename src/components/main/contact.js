@@ -3,6 +3,24 @@ import css from './main.scss'
 import style from './contact.css'
 import { Grid } from 'semantic-ui-react'
 import { Icon,Input,TextArea,Button,TransitionablePortal,Segment,Header} from 'semantic-ui-react'
+import { rotateInUpLeft, rotateInUpRight, fadeInDown } from 'react-animations';
+import Radium, {StyleRoot} from 'radium';
+import TrackVisibility from 'react-on-screen';
+
+const styles = {
+  rotateInUpLeft: {
+    animation: 'x 2.5s',
+    animationName: Radium.keyframes(rotateInUpLeft, 'rotateInUpLeft')
+  },
+  rotateInUpRight: {
+    animation: 'x 2.5s',
+    animationName: Radium.keyframes(rotateInUpRight, 'rotateInUpRight')
+  },
+  fadeInDown: {
+    animation: 'x 2s',
+    animationName: Radium.keyframes(fadeInDown, 'fadeInDown')
+  }
+}
 
 class Contact extends Component {
   constructor(props){
@@ -74,7 +92,11 @@ class Contact extends Component {
           </Segment>
         </TransitionablePortal>
         </div>
-        <div>
+        <TrackVisibility once throttleInterval={800}>
+            {
+              ({ isVisible }) => isVisible ?
+          <StyleRoot>
+        <div style={styles.fadeInDown}>
           <h2>C O N T A C T  &nbsp;<span> U S</span></h2>
           <p style={{ textAlign: 'center' }}>We'd love to hear your feedback.</p>
           <div style={{ textAlign: 'center', paddingTop: '15px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '50px' }}>
@@ -83,33 +105,50 @@ class Contact extends Component {
             <span className={css.border}></span>
           </div>
         </div>
+        </StyleRoot> : ''
+            }
+        </TrackVisibility>
         <Grid style={{margin:'0px'}}>
         <Grid.Row>
         <Grid.Column computer={6} tablet={6} mobile={15} className={style.contactColumn} >
+        <TrackVisibility once throttleInterval={800}>
+            {
+              ({ isVisible }) => isVisible ?
+          <StyleRoot>
+            <div style={styles.rotateInUpLeft}>
               <div className={style.contact}>
               <div className={style.contactDiv}>
-                <span>CALL US</span><br/>
-                <span>064 5555 5555</span>
+                <span style={{color:'#f0d389'}}>CALL US</span><br/>
+                <span>+381652225536</span>
               </div>
              <Icon name='call square' size='big' className={css.iconWhite} />
               </div>
               <div className={style.contact}>
               <div className={style.contactDiv}>
-                <span>ADDRESS</span><br/>
-                <span>Mladena Mitrica 2A, Belgrade-Serbia</span>
+                <span style={{color:'#f0d389'}}>ADDRESS</span><br/>
+                <span>Jocina Ada 31a, Belgrade-Serbia</span>
               </div>
               <Icon name='location arrow' size='big' className={css.iconWhite} />
               </div>
               <div className={style.contact}>
               <div className={style.contactDiv} >
-                <span>SAY HELLO </span><br/>
+                <span style={{color:'#f0d389'}}>SAY HELLO </span><br/>
                 <span>cybeletechonologies@gmail.com</span>
               </div>
               <Icon name='mail' size='big' className={css.iconWhite} />
               </div>
+              </div>
+              </StyleRoot> : ''
+            }
+        </TrackVisibility>
             </Grid.Column>
             <Grid.Column  className={style.formDiv} computer={8} tablet={8} mobile={15} >
              {/* <div className={style.inputDiv}> */}
+             <TrackVisibility once throttleInterval={800}>
+              {
+              ({ isVisible }) => isVisible ?
+              <StyleRoot>
+             <div style={styles.rotateInUpRight}>
                <Input name="name" onChange={this.handleInput}  className={style.inputs} placeholder='Name' /> 
                <Input name="email" onChange={this.handleInput} className={style.inputs}placeholder='Email' /> 
                <Input name="phone" onChange={this.handleInput} className={style.inputs} placeholder='Phone' />
@@ -125,6 +164,10 @@ class Contact extends Component {
               <div>
                <Button onClick={this.sendMail} className={style.sendButton} inverted>Send</Button>
               </div>
+              </div>
+              </StyleRoot> : ''
+                }
+              </TrackVisibility>
               </Grid.Column>
             </Grid.Row>
         </Grid>

@@ -3,6 +3,7 @@ you can import locally, and they wind up in the resulting bundle */
 @import '~semantic-ui-css/semantic.min.css';
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 
+
 html {
   padding: 0;
   border: 0;

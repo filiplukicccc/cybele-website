@@ -126,22 +126,24 @@ class Clients extends Component {
                 }
               </TrackVisibility>
             </Grid.Column>
-            <TrackVisibility once throttleInterval={1000}>
+            
+                      <Grid style={{ margin:'0px',minHeight:'297px'}}>
+                        <Grid.Row centered>
+                          <Grid.Column computer={10} mobile={14}>
+                          <TrackVisibility once throttleInterval={1000}>
               {
                 ({ isVisible }) => isVisible ?
                   <StyleRoot>
                     <div style={styles.fadeIn}>
-                      <Grid style={{ margin:'0px'}}>
-                        <Grid.Row centered>
-                          <Grid.Column computer={10}>
                             <div style={{ textAlign: "center", color: "#161e25",borderTop:"1px solid #161e25",borderBottom:"1px solid #161e25",marginBottom:"85px",marginTop:"30px" }}><p style={{marginTop:"30px",marginBottom:"30px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
-                          </Grid.Column>
-                        </Grid.Row>
-                      </Grid>
-                    </div>
+                            </div>
                   </StyleRoot> : ''
             }
           </TrackVisibility>
+                          </Grid.Column>
+                        </Grid.Row>
+                      </Grid>
+                    
           </Grid.Row>
           </Grid>
           </Parallax>

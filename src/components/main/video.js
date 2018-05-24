@@ -19,7 +19,7 @@ class Video extends Component {
   render(){
     return(
       <div>
-        <video className={css.videoHome} style={{marginBottom:'-4px'}} autoPlay loop src="https://coverr.co/s3/mp4/Love-Coding.mp4">
+        <video className={css.videoHome} style={{marginBottom:'-6px'}} autoPlay loop src="https://coverr.co/s3/mp4/Love-Coding.mp4">
         </video>
            <div className={css.homeDiv}>
              <StyleRoot>
