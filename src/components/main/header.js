@@ -21,23 +21,27 @@ class Header extends Component {
     let display=this.state.open ? "inline-block" : "none"
     return(
       <div>
-        <div className={style.menu}>
-          {/* <Menu inverted pointing secondary>
-            <Link to="#home"><Menu.Item name='HOME' /></Link>
-            <Link to="#about-us"><Menu.Item name='ABOUT US' /></Link>
-            <Link to="/services"><Menu.Item name='SERVICES' /></Link>
-            <Link to="/clients"><Menu.Item name='CLIENTS' /></Link>
-            <Link to="/people"><Menu.Item name='PEOPLE' /></Link>
-            <Link to="/contact"><Menu.Item name='CONTACT' /></Link>
-          </Menu> */}
-          <Menu style={{outline: 'none',border: 'none'}} inverted pointing secondary>
-            <a href='#home'><Menu.Item name='HOME' /></a>
-            <a href='#about-us'><Menu.Item name='ABOUT US' /></a>
-            <a href='#services'><Menu.Item name='SERVICES' /></a>
-            <a href='#clients'><Menu.Item name='CLIENTS' /></a>
-            <a href='#people'><Menu.Item name='PEOPLE' /></a>
-            <a href='#contact'><Menu.Item name='CONTACT' /></a>
-          </Menu>
+        <div style={{position:'fixed',width:'100%',zIndex:'1000'}}>
+          <div>
+            <div className={style.menu}>
+              {/* <Menu inverted pointing secondary>
+                <Link to="#home"><Menu.Item name='HOME' /></Link>
+                <Link to="#about-us"><Menu.Item name='ABOUT US' /></Link>
+                <Link to="/services"><Menu.Item name='SERVICES' /></Link>
+                <Link to="/clients"><Menu.Item name='CLIENTS' /></Link>
+                <Link to="/people"><Menu.Item name='PEOPLE' /></Link>
+                <Link to="/contact"><Menu.Item name='CONTACT' /></Link>
+              </Menu> */}
+                <Menu style={{outline: 'none',border: 'none',float:'right'}} inverted pointing secondary>
+                  <a href='#home'><Menu.Item name='HOME' /></a>
+                  <a href='#about-us'><Menu.Item name='ABOUT US' /></a>
+                  <a href='#services'><Menu.Item name='SERVICES' /></a>
+                  <a href='#clients'><Menu.Item name='CLIENTS' /></a>
+                  <a href='#people'><Menu.Item name='PEOPLE' /></a>
+                  <a href='#contact'><Menu.Item name='CONTACT' /></a>
+                </Menu>
+              </div>
+            </div>
           </div>
           <div className={style.ham}>
           <HamburgerButton
