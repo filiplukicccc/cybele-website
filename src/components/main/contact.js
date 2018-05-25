@@ -187,7 +187,9 @@ class Contact extends Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        <p style={{ marginTop: "40px", textAlign: "center" }}>© Cybele Technologies 2017 | All right reserved</p>
+        <div>
+          <p style={{ marginTop: "80px", textAlign: "center",fontSize:'14px' }}>© Cybele Technologies 2017 | All right reserved</p>
+        </div>
       </div>
     )
   }
