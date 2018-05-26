@@ -46,7 +46,7 @@ class AboutUs extends Component {
       <StyleRoot>
         <div style={styles.zoomIn}>
         <h2>A B O U T &nbsp;<span> C Y B E L E</span></h2>
-        <p style={{textAlign:'center'}}>some text about cybele</p>
+        <p style={{textAlign:'center'}}>First you should know</p>
           <div style={{textAlign:'center',paddingTop:'15px',display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'50px'}}>
             <span className={css.border}></span>
             <span style={{width:'8px',height:'8px',background:'#f0d389',display:'inline-block',borderRadius:'50%',margin:'0 20px'}}></span>
