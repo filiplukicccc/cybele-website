@@ -56,7 +56,7 @@ class Contact extends Component {
       return condition = true
     }
   }
-  sendMail = () => {
+  sendMail = async () => {
     let a = this.validate();
     if (a) {
       const data = {
@@ -66,13 +66,13 @@ class Contact extends Component {
         text: this.state.text,
         subject: this.state.subject
       }
-      fetch('http://localhost:8081/sendMail', {
+      await fetch('http://localhost:8081/sendMail', {
         body: JSON.stringify(data),
         headers: {
           'content-type': 'application/json'
         },
         method: 'POST'
-      }).then((response) => response.text())
+      }).then((response)=>response.text())
         .then((responseText) => {
           let res = JSON.parse(responseText)
           if (res.success == true) {
@@ -83,7 +83,7 @@ class Contact extends Component {
           } else {
             this.handleOpen();
             this.setState({
-              msg: "Email not sent!please try again"
+              msg: "Email not sent! Please try again"
             })
           }
         })
