@@ -52,7 +52,7 @@ class Clients extends Component {
         <StyleRoot>
           <div style={styles.flipInY}>
             <h2>O U R  &nbsp;<span> C L I E N T S</span></h2>
-            <p style={{ textAlign: 'center' }}>some text about cybele</p>
+            <p style={{ textAlign: 'center' }}>Meet our clients</p>
             <div style={{ textAlign: 'center', paddingTop: '15px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '50px' }}>
               <span className={css.border}></span>
               <span style={{ width: '8px', height: '8px', background: '#f0d389', display: 'inline-block', borderRadius: '50%', margin: '0 20px' }}></span>
@@ -139,7 +139,7 @@ class Clients extends Component {
                 ({ isVisible }) => isVisible ?
                   <StyleRoot>
                     <div style={styles.fadeIn}>
-                            <div style={{ textAlign: "center", color: "#161e25",borderTop:"1px solid #161e25",borderBottom:"1px solid #161e25",marginBottom:"85px",marginTop:"30px" }}><p style={{marginTop:"30px",marginBottom:"30px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+                            <div style={{ textAlign: "center", color: "#161e25",borderTop:"1px solid #161e25",borderBottom:"1px solid #161e25",marginBottom:"85px",marginTop:"30px" }}><p style={{marginTop:"30px",marginBottom:"30px"}}>Our client list speaks for itself. Since our earliest days, our clients list range from start-ups to large companies with that same approach and dedication at the core of every engagement. Our services are appreciated because  our strong technology skills and the capability to translate customer idea into  technology and  sector specific applications. </p></div>
                             </div>
                   </StyleRoot> : ''
             }
