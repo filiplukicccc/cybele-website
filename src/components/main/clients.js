@@ -52,7 +52,7 @@ class Clients extends Component {
         <StyleRoot>
           <div style={styles.flipInY}>
             <h2>O U R  &nbsp;<span> C L I E N T S</span></h2>
-            <p style={{ textAlign: 'center' }}>some text about cybele</p>
+            <p style={{ textAlign: 'center' }}>Meet our clients</p>
             <div style={{ textAlign: 'center', paddingTop: '15px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '50px' }}>
               <span className={css.border}></span>
               <span style={{ width: '8px', height: '8px', background: '#f0d389', display: 'inline-block', borderRadius: '50%', margin: '0 20px' }}></span>
