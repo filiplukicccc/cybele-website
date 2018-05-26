@@ -253,16 +253,16 @@ const router = (new KoaRouter())
   .post('/sendMail', async ctx => {
     let a;
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+     service:'gmail',
       auth: {
-        user: "a",
-        pass: "a"
+        user: "cybeletechnologies.office@gmail.com",
+        pass: "11Cybele22"
       }
     })
     
     const mailOptions = {
       from:ctx.request.body.email,
-      to: "kicaubuntu@gmail.com",
+      to: "office@cybeletechnologies.com",
       subject: `Subject: ${ctx.request.body.subject}`,
       text:`
         ${ctx.request.body.text}
@@ -272,11 +272,11 @@ const router = (new KoaRouter())
         Phone: ${ctx.request.body.phone}
       `
     }
-    
     const poslo = await transporter.sendMail(mailOptions)
     if(poslo.accepted) {
       a = JSON.stringify({success: true});
-    }else{
+    }
+    if(poslo.rejected.length){
       a = JSON.stringify({success: false});
     }
     ctx.body = a;

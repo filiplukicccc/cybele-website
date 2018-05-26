@@ -42,8 +42,10 @@ export function getNetworkInterface(uri, opt) {
 export function browserClient() {
   // If we have an internal GraphQL server, we need to append it with a
   // call to `getServerURL()` to add the correct host (in dev + production)
-  const uri = config.graphQLServer
-    ? `${getServerURL()}${config.graphQLEndpoint}` : config.graphQLEndpoint;
+  // const uri = config.graphQLServer
+  //   ? `${getServerURL()}${config.graphQLEndpoint}` : config.graphQLEndpoint;
+
+  const uri = 'https://cybeletechnologies.com/graphql';
 
   return createClient({
     networkInterface: getNetworkInterface(uri),
