@@ -131,7 +131,7 @@ class Clients extends Component {
               </TrackVisibility>
             </Grid.Column>
             
-                      <Grid style={{ margin:'0px',minHeight:'297px'}}>
+                      <Grid style={{ margin:'0px',minHeight:'200px'}}>
                         <Grid.Row centered>
                           <Grid.Column computer={10} mobile={14}>
                           <TrackVisibility once throttleInterval={1000}>
@@ -139,7 +139,7 @@ class Clients extends Component {
                 ({ isVisible }) => isVisible ?
                   <StyleRoot>
                     <div style={styles.fadeIn}>
-                            <div style={{ textAlign: "center", color: "#161e25",borderTop:"1px solid #161e25",borderBottom:"1px solid #161e25",marginBottom:"85px",marginTop:"30px" }}><p style={{marginTop:"30px",marginBottom:"30px"}}>Our client list speaks for itself. Since our earliest days, our clients list range from start-ups to large companies with that same approach and dedication at the core of every engagement. Our services are appreciated because  our strong technology skills and the capability to translate customer idea into  technology and  sector specific applications. </p></div>
+                            <div style={{ textAlign: "center", color: "#161e25",borderTop:"1px solid #161e25",borderBottom:"1px solid #161e25",marginBottom:"55px",marginTop:"30px" }}><p style={{marginTop:"30px",marginBottom:"30px"}}>Our client list speaks for itself. Since our earliest days, our clients list range from start-ups to large companies with that same approach and dedication at the core of every engagement. Our services are appreciated because  our strong technology skills and the capability to translate customer idea into  technology and  sector specific applications. </p></div>
                             </div>
                   </StyleRoot> : ''
             }

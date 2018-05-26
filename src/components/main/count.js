@@ -24,31 +24,31 @@ class Count extends Component {
               {/* <div className={style.countDiv}> */}
               <Grid.Column computer={2} mobile={8} tablet={4}>
           <div style={{textAlign:"center"}}>
-           <CountUp className={style.countUp} start={0} end={160} duration={4.75} useEasing={true}/>
+           <CountUp className={style.countUp} start={0} end={82} duration={4.75} useEasing={true}/>
           <p>HAPPY CLIENTS</p>
           </div>
           </Grid.Column >
           <Grid.Column computer={3} mobile={8} tablet={5}>
           <div style={{textAlign:"center"}}>
-          <CountUp className={style.countUp} start={0} end={160} duration={4.75} useEasing={true}/>
+          <CountUp className={style.countUp} start={0} end={45} duration={4.75} useEasing={true}/>
           <p>CUPS OF COFFEE (per day)</p>
           </div>
           </Grid.Column>
           <Grid.Column computer={2} mobile={8} tablet={4}>
           <div style={{textAlign:"center"}}>
-          <CountUp className={style.countUp} start={0} end={360} duration={4.75} useEasing={true}/>
+          <CountUp className={style.countUp} start={0} end={180} duration={4.75} useEasing={true}/>
           <p>POSITIVE FEEDBACK</p>
           </div>
           </Grid.Column>
           <Grid.Column computer={2} mobile={8} tablet={4}>
           <div style={{textAlign:"center"}}>
-          <CountUp className={style.countUp} start={0} end={60} duration={4.75} useEasing={true}/>
+          <CountUp className={style.countUp} start={0} end={63} duration={4.75} useEasing={true}/>
           <p>FINISHED PROJECTS</p>
           </div>
           </Grid.Column>
           <Grid.Column computer={2} mobile={8} tablet={4}>
           <div style={{textAlign:"center"}}>
-          <CountUp className={style.countUp} start={0} end={92} duration={4.75} useEasing={true}/>
+          <CountUp className={style.countUp} start={0} end={8} duration={4.75} useEasing={true}/>
           <p>OWN PROJECTS</p>
           </div>
           </Grid.Column>
