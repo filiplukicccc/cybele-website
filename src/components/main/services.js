@@ -66,7 +66,7 @@ class Services extends Component {
                     <Icon name='laptop' className={css.icon} style={{paddingTop:'5px'}}/>
                   </div>
                     <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <p>Our  developers are trained  and experienced to provide top level web applications  across a variety of website platforms. Technologies: HTML,CSS,JavaScript,ReactJS,Material UI, SemanticUI.</p>
                 </div>
               </StyleRoot> : ''
             }
@@ -82,7 +82,7 @@ class Services extends Component {
                   <Icon name='pencil' className={css.icon} style={{paddingTop:'5px'}}/>
                 </div>
                   <h3>Graphic Design</h3>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                  <p>Businesses of all sizes count on our graphic design experts. Our aim is to exceed your expectations and create difference.Technologies: Adobe Photoshop,Adobe Illustrator,Adobe After Effect,Adobe Premiere,Maya</p>
                   </div>
               </StyleRoot> : ''
             }
@@ -98,7 +98,7 @@ class Services extends Component {
                   <Icon name='settings' className={css.icon} style={{paddingTop:'5px'}}/>
                 </div>
                   <h3>Softwere Engeneering</h3>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                  <p>We offer services for integrating and engineering complete software systems including consulting services and maintaining  software. Technologies:C#,JAVA,Python,Ruby on Rails,JS.</p>
                   </div>
                 </StyleRoot> : ''
               }
@@ -114,7 +114,7 @@ class Services extends Component {
                     <Icon name='announcement' className={css.icon} style={{paddingTop:'5px'}}/>
                   </div>
                     <h3>Internet Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <p>We provide a range of services, with a focus on creating and marketing amazing content as well as providing expert consulting and a custom control panel for clients. Technologies:SEO,Google AdWords,Facebook Advertising.</p>
                 </div>
               </StyleRoot> : ''
             }
@@ -130,7 +130,7 @@ class Services extends Component {
                   <Icon name='at' className={css.icon} style={{paddingTop:'5px'}}/>
                 </div>
                   <h3>Support and Maintanence</h3>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                  <p>Our support and maintenance solutions can assist with updating content, hosting solutions and backing up the data. We can support and maintain a wide variety of platforms online. Technologies: All availabe.</p>
                   </div>
               </StyleRoot> : ''
             }
@@ -146,7 +146,7 @@ class Services extends Component {
                   <Icon name='wrench' className={css.icon} style={{paddingTop:'5px'}}/>
                 </div>
                   <h3>Industrial Design</h3>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                  <p>Our industrial design team works alongside our product engineers to develop beautiful concepts that  meet your business requirements. Technologies : Adobe Illustrator, AutoCAD ,3D Max,Blender.</p>
                   </div>
                 </StyleRoot> : ''
               }
