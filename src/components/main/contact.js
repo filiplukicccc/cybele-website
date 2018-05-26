@@ -152,7 +152,7 @@ class Contact extends Component {
                         <div className={style.contact}>
                           <div className={style.contactDiv} >
                             <span style={{ color: '#f0d389' }}>SAY HELLO </span><br />
-                            <span>cybeletechonologies@gmail.com</span>
+                            <span>office@cybeletechnologies.com</span>
                           </div>
                           <Icon name='mail' size='big' className={css.iconWhite} />
                         </div>
