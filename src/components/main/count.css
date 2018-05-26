@@ -21,13 +21,12 @@
     letter-spacing: 1px;
   }
   @media only screen and (max-width:580px) {
-    .countUpRow{
+    .countUpRow {
       height:380px;
       align-items: center !important;
       background:rgba(0,0,0,0.85);
       padding: 0px 40px !important;
-  }
-
+    }
   }
 
   @media only screen and (max-width: 768px) {
