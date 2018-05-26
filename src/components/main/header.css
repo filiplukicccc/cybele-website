@@ -30,6 +30,7 @@
     }
     .hamMenu a {
         z-index: 1000 !important;
+        width: 100%;
     }
     .hamMenu a:hover  div {
         color:#f0d389 !important;
